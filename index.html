@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>GraphQL Лабораторна 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+            .form input {
+                flex: 1;
+                padding: 8px;
+            }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 6px 12px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Менеджер завдань (GraphQL API)</h2>
+    <div class="form">
+        <input type="text" id="taskInput" placeholder="Нове GraphQL завдання...">
+        <button onclick="addTask()">Додати</button>
+    </div>
+    <div id="list">Завантаження...</div>
+
+    <script>
+        // Завдяки налаштуванням redirects, ми можемо звертатися просто до /graphql
+        const URL = "/graphql";
+
+        async function makeGraphQLRequest(query, variables = {}) {
+            const res = await fetch(URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ query, variables })
+            });
+            const json = await res.json();
+            return json.data;
+        }
+
+        async function loadTasks() {
+            const query = `
+                    query GetTasks {
+                        items(take: 50) {
+                            _id
+                            title
+                            completed
+                        }
+                    }
+                `;
+            try {
+                const data = await makeGraphQLRequest(query);
+                const tasks = data.items;
+                const container = document.getElementById("list");
+                container.innerHTML = tasks.length ? "" : "<p>Список порожній</p>";
+                tasks.forEach(t => {
+                    const div = document.createElement("div");
+                    div.className = "item";
+                    div.innerHTML = `
+                            <span class="${t.completed ? 'completed' : ''}" onclick="toggleTask('${t._id}', ${t.completed})">${t.title}</span>
+                            <button onclick="deleteTask('${t._id}')">❌</button>
+                        `;
+                    container.appendChild(div);
+                });
+            } catch (err) {
+                console.error("Помилка GraphQL:", err);
+            }
+        }
+
+        async function addTask() {
+            const input = document.getElementById("taskInput");
+            if (!input.value.trim()) return;
+
+            const mutation = `
+                    mutation CreateTask($title: String!) {
+                        createItem(title: $title) {
+                            _id
+                        }
+                    }
+                `;
+            await makeGraphQLRequest(mutation, { title: input.value });
+            input.value = "";
+            loadTasks();
+        }
+
+        async function toggleTask(id, status) {
+            const mutation = `
+                    mutation ToggleTask($id: ID!, $completed: Boolean!) {
+                        updateItem(id: $id, completed: $completed) {
+                            _id
+                        }
+                    }
+                `;
+            await makeGraphQLRequest(mutation, { id, completed: !status });
+            loadTasks();
+        }
+
+        async function deleteTask(id) {
+            const mutation = `
+                    mutation DeleteTask($id: ID!) {
+                        deleteItem(id: $id)
+                    }
+                `;
+            await makeGraphQLRequest(mutation, { id });
+            loadTasks();
+        }
+
+        loadTasks();
+    </script>
+</body>
+</html>

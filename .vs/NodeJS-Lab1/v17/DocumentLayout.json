@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "R:\\Programming\\NCWT\\NodeJS-Lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab2\\functions\\graphql.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:functions\\graphql.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab2\\netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab2\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab2\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab2\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab2\\functions\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:functions\\db.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "graphql.js",
+              "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab2\\functions\\graphql.js",
+              "RelativeDocumentMoniker": "functions\\graphql.js",
+              "ToolTip": "R:\\Programming\\NCWT\\NodeJS-Lab2\\functions\\graphql.js",
+              "RelativeToolTip": "functions\\graphql.js",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAUwE0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-26T22:12:06.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "package.json",
+              "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab2\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "R:\\Programming\\NCWT\\NodeJS-Lab2\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-26T22:01:26.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab2\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "R:\\Programming\\NCWT\\NodeJS-Lab2\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-26T21:14:03.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "netlify.toml",
+              "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab2\\netlify.toml",
+              "RelativeDocumentMoniker": "netlify.toml",
+              "ToolTip": "R:\\Programming\\NCWT\\NodeJS-Lab2\\netlify.toml",
+              "RelativeToolTip": "netlify.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-26T21:08:03.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": ".env",
+              "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab2\\.env",
+              "RelativeDocumentMoniker": ".env",
+              "ToolTip": "R:\\Programming\\NCWT\\NodeJS-Lab2\\.env",
+              "RelativeToolTip": ".env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-26T20:47:28.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "db.js",
+              "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab2\\functions\\db.js",
+              "RelativeDocumentMoniker": "functions\\db.js",
+              "ToolTip": "R:\\Programming\\NCWT\\NodeJS-Lab2\\functions\\db.js",
+              "RelativeToolTip": "functions\\db.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-26T20:45:55.651Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

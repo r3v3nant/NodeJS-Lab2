@@ -1,0 +1,12 @@
+[build]
+  command = "npm install"
+  publish = "."
+  functions = "functions"
+
+[[redirects]]
+  from = "/graphql"
+  to = "/.netlify/functions/graphql"
+  status = 200
+
+[dev]
+  watch = ["functions", "index.html"]

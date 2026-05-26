@@ -1,0 +1,21 @@
+{
+	"dbConnectionString": "postgres://localhost:59414/postgres",
+	"geolocation": {
+		"data": {
+			"city": "Lauchhammer",
+			"country": {
+				"code": "DE",
+				"name": "Germany"
+			},
+			"subdivision": {
+				"code": "BB",
+				"name": "Brandenburg"
+			},
+			"timezone": "Europe/Berlin",
+			"latitude": 51.4865,
+			"longitude": 13.7615,
+			"postalCode": "01979"
+		},
+		"timestamp": 1779834741040
+	}
+}
